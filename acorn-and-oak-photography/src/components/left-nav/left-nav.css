@@ -1,5 +1,48 @@
+@import "./../../colors.css";
+
 .left-nav {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-color: var(--secondary);
 }
+
+.hamburger-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hamburger-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.left-nav > a > div {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    text-align: left;
+}
+
+.left-nav > a > div >span {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .hamburger-menu {
+        display: inline;
+    }
+
+    .left-nav > a > div .nav-close {
+        display: none
+    }
+
+    .nav-close {
+        display: none;
+    }
+  }

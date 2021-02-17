@@ -1,5 +1,4 @@
 .App {
-  /*background-color: yellow;*/
   text-align: center;
   display: flex;
   flex: 1;
@@ -10,14 +9,19 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  background-color: yellow;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-area {
+    flex-direction: column;
+    flex: 0;
+  }
 }
 
 .page-area {
   flex: 3;
   flex-direction: row;
   align-items: stretch;
-  background-color: yellowgreen;
 }
 
 /* .App-logo {

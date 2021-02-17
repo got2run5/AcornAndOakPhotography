@@ -1,3 +1,45 @@
 .horizontal-header {
-    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: var(--primary-light-1);
+    text-align: left;
+}
+
+.horizontal-header > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-header > div > h2 {
+    font-family: Georgia;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.horizontal-header > div > div {
+    max-height: 5vh;
+}
+
+.logo {
+    padding: 5px;
+    height: 2.5em;
+}
+
+.social-media-container {
+    padding: 10px;
+    display: flex; 
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .social-media-container {
+        display: none;
+    }
+}
+
+.social-media-container > svg {
+    padding-left: 15px;
 }

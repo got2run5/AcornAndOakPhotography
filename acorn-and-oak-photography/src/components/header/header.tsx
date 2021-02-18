@@ -7,13 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Header() {
   return (
     <header className="horizontal-header">
-      <div>
-        <div>
+      <div className="title-container">
+        <div className="logo-container">
           <img className="logo" src={logo} alt="Acorn And Oak Logo" />
         </div>
-        <h2>Acorn and Oak Photography</h2>
+        <h1>Acorn & Oak Photography</h1>
       </div>
-      <div className="social-media-container">
+      <div className="logo-container">
         <FontAwesomeIcon icon={faFacebookF} size="lg"/>
         <FontAwesomeIcon icon={faTwitter} size="lg"/>
         <FontAwesomeIcon icon={faInstagram} size="lg"/>

@@ -19,6 +19,7 @@
 }
 
 .page-area {
+  display: flex;
   flex: 3;
   flex-direction: row;
   align-items: stretch;

@@ -13,10 +13,11 @@
     flex-direction: row;
 }
 
-.horizontal-header > div > h2 {
-    font-family: Georgia;
+.horizontal-header > div > h1 {
+    font-family: 'Homemade Apple';
     padding-left: 10px;
     padding-right: 10px;
+    margin: .5em;
 }
 
 .horizontal-header > div > div {
@@ -25,10 +26,10 @@
 
 .logo {
     padding: 5px;
-    height: 2.5em;
+    height: 3.5em;
 }
 
-.social-media-container {
+.logo-container {
     padding: 10px;
     display: flex; 
     align-items: center;
@@ -40,6 +41,11 @@
     }
 }
 
-.social-media-container > svg {
+.logo-container > svg {
     padding-left: 15px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center
 }

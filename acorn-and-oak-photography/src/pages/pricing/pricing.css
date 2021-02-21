@@ -1,0 +1,38 @@
+.pricing-form {
+    text-align: left;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.pricing-form>section {
+    padding-top: clamp(8px, 2vh, 30px);
+}
+
+.pricing-component-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pricing-component-column {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.pricing-component-container {
+    margin-right: clamp(8px, 1vw, 24px);
+    padding-bottom: clamp(8px, 2vh, 30px);
+}
+
+.pricing-submit-button-container {
+    padding-top: clamp(8px, 2vh, 30px);
+}
+
+.pricing-text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

@@ -1,5 +1,17 @@
 @import "./../../colors.css";
+.footer-logo-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer-logo-container>svg {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .footer {
-    background-color: var(--primary-light-1);
+    background-color: var(--primary);
 }

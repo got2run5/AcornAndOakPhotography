@@ -1,22 +1,7 @@
-/*https://paletton.com/#uid=52x0M0k9kDs1VW55cO0e4uzjfp- */
 :root {
-    --background: #F4fBEC;
+    --background: #e1e2e1;
+   
+    --primary: #005b9f;
 
-    --primary: #CCEDA8;
-    --primary-light-1: #E2F5CD;
-    --primary-light-2: #F4fBEC;
-    --primary-dark-1: #AEDC7B;
-    --primary-dark-2: #83b849;
-
-    --secondary: #80B4B4;
-    --secondary-light-1: #B3D6D6;
-    --secondary-light-2: #E1EFEF;
-    --secondary-dark-1: #529292;
-    --secondary-dark-2: #317A7A;
-
-    --neutral: #FFFBB5;
-    --neutral-light-1: #FFFDD6;
-    --neutral-light-2: #FFFDD6;
-    --neutral-dark-1: #F3EE88;
-    --neutral-dark-2: #CCC651;
+    --secondary: #5eb8ff;
 }

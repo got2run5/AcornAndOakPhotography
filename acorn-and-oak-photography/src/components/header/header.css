@@ -1,51 +1,58 @@
 .horizontal-header {
     display: flex;
+    max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    background-color: var(--primary-light-1);
+    background-color: var(--primary);
     text-align: left;
+
 }
 
-.horizontal-header > div {
-    display: flex;
-    flex-direction: row;
-}
-
-.horizontal-header > div > h1 {
+.horizontal-header>div>h1 {
     font-family: 'Homemade Apple';
-    padding-left: 10px;
-    padding-right: 10px;
     margin: .5em;
+    color: white;
 }
 
-.horizontal-header > div > div {
-    max-height: 5vh;
-}
-
-.logo {
+.header-logo {
     padding: 5px;
     height: 3.5em;
 }
 
-.logo-container {
+.header-logo-container {
     padding: 10px;
-    display: flex; 
+    display: flex;
     align-items: center;
+    color: white;
+    text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
-    .social-media-container {
-        display: none;
-    }
-}
-
-.logo-container > svg {
+.header-logo-container>svg {
     padding-left: 15px;
 }
 
 .title-container {
     display: flex;
-    align-items: center
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .horizontal-header>div>h1 {
+        font-size: 1.6em;
+    }
+    .horizontal-header>div>.social-media {
+        display: none;
+    }
+    .horizontal-header {
+        justify-content: center;
+        text-align: center;
+    }
+    .header-logo-container {
+        display: none;
+    }
+    .title-container {
+        flex: 1;
+        justify-content: center;
+    }
 }

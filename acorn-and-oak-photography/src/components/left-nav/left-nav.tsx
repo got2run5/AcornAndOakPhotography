@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './left-nav.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { faBars, faHome, faCamera, faAddressCard, faFileInvoiceDollar, faImages }
   from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function LeftNav() {
   const [isExpanded, setExpanded] = useState(false);
+  
   let navItemClass = "nav-close";
   navItemClass = isExpanded ? "nav-open" : "nav-close";
 
@@ -17,36 +18,36 @@ function LeftNav() {
           <FontAwesomeIcon icon={faBars} size="3x" />
         </button>
       </div>
-      <Link to="/">
-        <div className={navItemClass} onClick={() => setExpanded(false)}>
+      <NavLink to="/" activeClassName="active-route-link" exact={true}>
+        <div className={`${navItemClass} ${ 1 == (2/4) ? "testClass": ""}`} onClick={() => setExpanded(false)}>
           <FontAwesomeIcon icon={faHome} size="lg" />
           <span>Home</span>
         </div>
-      </Link>
-      <Link to="/my-work">
+      </NavLink>
+      <NavLink to="/my-work" activeClassName="active-route-link" exact={true}>
         <div className={navItemClass} onClick={() => setExpanded(false)}>
           <FontAwesomeIcon icon={faCamera} size="lg" />
           <span>My Work</span>
         </div>
-      </Link>
-      <Link to="/about-me">
+      </NavLink>
+      <NavLink to="/about-me" activeClassName="active-route-link" exact={true}>
         <div className={navItemClass} onClick={() => setExpanded(false)}>
           <FontAwesomeIcon icon={faAddressCard} size="lg" />
           <span>About Me</span>
         </div>
-      </Link>
-      <Link to="/pricing">
+      </NavLink>
+      <NavLink to="/pricing" activeClassName="active-route-link" exact={true}>
         <div className={navItemClass} onClick={() => setExpanded(false)}>
           <FontAwesomeIcon icon={faFileInvoiceDollar} size="lg" />
           <span>Pricing</span>
         </div>
-      </Link>
-      <Link to="/client-galleries">
+      </NavLink>
+      <NavLink to="/client-galleries" activeClassName="active-route-link" exact={true}>
         <div className={navItemClass} onClick={() => setExpanded(false)}>
           <FontAwesomeIcon icon={faImages} size="lg" />
           <span>Client Galleries</span>
         </div>
-      </Link>
+      </NavLink>
     </aside>
   );
 }

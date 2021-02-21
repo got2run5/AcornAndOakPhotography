@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
 import './home.css';
-import beach_image from "./../../beach.jpg";
 
 function Home() {
 
@@ -14,23 +13,22 @@ function Home() {
     };
 
     return (
-        <div className="image-grid">
-            <div className="image-row">
-                <div className="image-row-text">
+        <div className="home-image-grid">
+            <div className="home-image-row">
+                <div className="home-image-row-text">
                     <p>
-                        "We do not remember days, we remember moments." <br /> <br />
-                        Let us capture them.
+                        "We do not remember days, we remember moments."
                     </p>
                 </div>
                 <div className="beach-image" />
             </div>
-            <div className="image-row">
+            <div className="home-image-row">
                 <div className="ocean-image" />
-                <div className="image-row-text">
+                <div className="home-image-row-text">
                     <p>
-                        Book Today <br />
+                        Let us help capture them. <br /> <br />
                         (262) 627 - 9402 <br />
-                        <a href="mailto:hartmannk@outlook.com">hartmannk@outlook.com</a>
+                        <a href="mailto:hartmannk@outlook.com">hartmannk<wbr />@outlook.com</a>
                     </p>
                 </div>
             </div>
@@ -40,5 +38,3 @@ function Home() {
 }
 
 export default Home;
-
-//      <img className="home-image" src={beach_image}></img>

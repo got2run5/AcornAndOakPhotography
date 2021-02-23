@@ -21,6 +21,7 @@ jobs:
         node-version: '12.13.0'
 
     - name: npm install, build, and test
+      working-directory: acorn-and-oak-photography
       run: |
         npm install
         npm run build --if-present
@@ -32,4 +33,4 @@ jobs:
         app-name: 'acorn-and-oak-photos'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d4207b3909da4025985a4507949466e0 }}
-        package: .
+        package: acorn-and-oak-photography

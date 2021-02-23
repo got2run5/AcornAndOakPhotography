@@ -8,7 +8,7 @@ import about_me_image from "./../../images/about_me.jpg";
 import resume from "./../../images/resume.pdf";
 
 function AboutMe() {
-  const openLinkedIn = () => { window.open('https://www.linkedin.com/in/', '_blank') };
+  const openLinkedIn = () => { window.open('https://www.linkedin.com/in/hartmannk', '_blank') };
 
   const openResume = () => { window.open(resume, '_blank') }
 

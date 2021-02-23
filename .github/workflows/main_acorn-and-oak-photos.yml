@@ -33,4 +33,4 @@ jobs:
         app-name: 'acorn-and-oak-photos'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_29b19f0e3fe54654b5145171459b1547 }}
-        package: .
+        package: acorn-and-oak-photography

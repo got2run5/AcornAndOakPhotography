@@ -26,8 +26,8 @@ function AboutMe() {
 
         <p>
           My prior experience building full stack applications primarily relied upon .net core
-          paired with Angular as a front end framework.  This web site is my first foray into React
-          and was completed in approximately 6 hours spent over 3 days. I consider myself fluent in
+          paired with Angular as a front end framework.  This website is my first foray into React
+          and was completed in approximately 10 hours spent over 4 days. I consider myself fluent in
           the following technologies, with "just like riding a bike" experience in several more.
         </p>
       </section>

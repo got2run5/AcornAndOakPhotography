@@ -155,7 +155,7 @@ function Pricing() {
         </div>
       </section>
       <div className="pricing-submit-button-container">
-        <Button className="primary-button" variant="contained" color="primary" onClick={submitEventInfo}>
+        <Button variant="contained" color="primary" onClick={submitEventInfo}>
           Submit
         </Button>
       </div>

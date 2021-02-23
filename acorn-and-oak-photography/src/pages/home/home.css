@@ -1,67 +1,75 @@
-.home-image {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto/9;
-}
-
-.home-image-grid {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
 .beach-image {
     background-image: url('../../images/beach.jpg');
     background-size: cover;
+    min-height: 100%;
+    position: relative;
+    opacity: .65;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
     display: flex;
-    flex: 3;
 }
 
 .ocean-image {
     background-image: url('../../images/ocean.jpg');
     background-size: cover;
+    min-height: 100%;
+    position: relative;
+    opacity: .65;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+}
+
+.cave-image {
+    background-image: url('../../images/cave.jpg');
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+    opacity: .65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-parallax-container {
+    flex-grow: 1;
+}
+
+.content-container {
+    color: #777;
+    background-color: white;
     text-align: center;
-    display: flex;
-    flex: 3;
+    padding: 50px;
+    text-align: center;
 }
 
-.home-image-row {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
+.home-header {
+    text-align: center;
+
 }
 
-.home-image-row-text {
-    flex: 2;
+.content-overlay {
+    margin: auto;
+}
+
+.content-overlay > div {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 3vh;
+    background-color: white;
+
+    opacity: 85%;
+}
+
+.quote-button-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home-image-row-text>p {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-family: 'Spartan';
-    font-size: 1.2rem;
-    line-height: 1.8em;
-    text-align: center;
-}
-
-@media only screen and (max-width: 700px) {
-    .home-image-row {
-        flex-direction: column;
-    }
-    .ocean-image {
-        flex: 1;
-        min-height: 25vh;
-    }
-    .beach-image {
-        display: none;
-    }
+.quote-button-container a {
+    text-decoration: none;
 }

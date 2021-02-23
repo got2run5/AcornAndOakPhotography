@@ -36,6 +36,7 @@
     border-bottom: 2px solid black;
     cursor: pointer;
     text-align: left;
+    color: var(--font-color)
 }
 
 .left-nav>a>div>span {
@@ -44,7 +45,8 @@
 }
 
 .left-nav>a>div:hover {
-    color: white;
+    color: black;
+    font-weight: 900;
 }
 
 .active-route-link {
@@ -53,6 +55,10 @@
     margin-left: .2vw;
 }
 
+.active-route-link>div {
+    color: black !important;
+    font-weight: 900;
+}
 
 @media only screen and (max-width: 700px) {
     .hamburger-menu {
@@ -61,10 +67,7 @@
     .left-nav {
         flex: 0;
     }
-    .left-nav>a>div .nav-close {
-        display: none
-    }
     .nav-close {
-        display: none;
+        display: none !important;
     }
 }

@@ -11,14 +11,16 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .page-area {
   display: flex;
-  flex: 3;
+  flex: 4;
   flex-direction: row;
   align-items: stretch;
+  overflow-y: scroll;
+  color: var(--font-color);
 }
 
 footer {

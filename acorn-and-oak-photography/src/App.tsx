@@ -11,12 +11,16 @@ import Pricing from './pages/pricing/pricing';
 import ClientGalleries from './pages/client-galleries/client-galleries';
 
 function App() {
+  const [isMenuExpanded, setIsMenuExpanded] = React.useState<boolean>(false);
+  const toggleMenu = () => { setIsMenuExpanded(!isMenuExpanded) };
+  const onMenuItemClicked = () => { setIsMenuExpanded(false) };
+
   return (
     <div className="App">
-      <Header />
+      <Header onMenuExpandToggled={toggleMenu} />
       <div className="main-area">
         <Router>
-          <LeftNav />
+          <LeftNav isExpanded={isMenuExpanded} onMenuItemClick={onMenuItemClicked}/>
           <div className="page-area">
             <Switch>
               <Route path="/my-work">

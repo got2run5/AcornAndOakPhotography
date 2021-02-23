@@ -8,12 +8,6 @@
 
 }
 
-.horizontal-header>div>h1 {
-    font-family: 'Homemade Apple';
-    margin: .5em;
-    color: white;
-}
-
 .header-logo {
     padding: 5px;
     height: 3.5em;
@@ -31,16 +25,20 @@
     padding-left: 15px;
 }
 
-.title-container {
+.header-element-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.header-element-container>div>h1 {
+    font-family: 'Homemade Apple';
+    margin: .5em;
+    color: white;
+}
+
+
 @media only screen and (max-width: 700px) {
-    .horizontal-header>div>h1 {
-        font-size: 1.6em;
-    }
     .horizontal-header>div>.social-media {
         display: none;
     }
@@ -51,8 +49,20 @@
     .header-logo-container {
         display: none;
     }
-    .title-container {
+    .header-element-container {
+        display: flex;
         flex: 1;
+        justify-content: start;
+        width: 100%;
+        text-align: center;
+    }
+    .header-element-container>div>h1 {
+        justify-content: center;;
+        font-size: 1.6em;
+    }
+    .title-container {
+        display: flex;
         justify-content: center;
+        flex-grow: 1;
     }
 }

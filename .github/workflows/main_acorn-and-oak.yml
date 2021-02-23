@@ -16,7 +16,6 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Set up Node.js version
-      working-directory: acorn-and-oak-photography
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
@@ -29,7 +28,6 @@ jobs:
         npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
-      working-directory: acorn-and-oak-photography
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'acorn-and-oak'

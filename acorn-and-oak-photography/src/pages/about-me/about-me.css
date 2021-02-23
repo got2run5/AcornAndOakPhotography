@@ -9,9 +9,10 @@
 .about-me-button-container {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 1vh;
 }
 
-.about-me-button-container>div {
+.about-me-button-container>div:nth-of-type(1) {
     padding-right: clamp(8px, 1vw, 24px);
     margin-right: clamp(8px, 1vw, 24px);
 }

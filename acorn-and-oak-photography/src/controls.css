@@ -19,13 +19,3 @@
     width: 400px;
     max-width: 96vw;
 }
-
-.primary-button {
-    background-color: blue;
-    color: white;
-}
-
-.secondary-button {
-    background-color: white;
-    color: black;
-}

@@ -1,39 +1,59 @@
 import React from 'react';
-import Slider from "react-slick";
 import './home.css';
+import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 function Home() {
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 2
-    };
-
     return (
-        <div className="home-image-grid">
-            <div className="home-image-row">
-                <div className="home-image-row-text">
-                    <p>
-                        "We do not remember days, we remember moments."
-                    </p>
+        <div className="home-parallax-container">
+            <div className="beach-image">
+                <div className="content-overlay">
+                    <div>
+                        Weddings
+                    </div>
+                    <div>
+                        Birthdays
+                    </div>
+                    <div>
+                        Graduations
+                    </div>
+                    <div>
+                        & More
+                    </div>
                 </div>
-                <div className="beach-image" />
             </div>
-            <div className="home-image-row">
-                <div className="ocean-image" />
-                <div className="home-image-row-text">
-                    <p>
-                        Let us help capture them. <br /> <br />
-                        (262) 627 - 9402 <br />
-                        <a href="mailto:hartmannk@outlook.com">hartmannk<wbr />@outlook.com</a>
-                    </p>
+            <div className="content-container">
+                <h3 className="test-header">More than Photography</h3>
+                <p>
+                    We all have memories that we want to preserve with the same crystal clear
+                    sharpness we originally experienced.  We understand, and we promise that if you
+                    trust us to safeguard your memories, the photos we take will elicit the same emotions
+                    you felt on the day we snapped them.
+                </p>
+            </div>
+            <div className="ocean-image">
+            </div>
+            <div className="content-container">
+                <h3 className="test-header">Our Goal</h3>
+                <p>
+                    Our goal isn't just to create a pretty picture.  The most important moments of our
+                    lives are those we spend with others.  Our photos are tailored to reflect the
+                    relationships that are important to you.
+                </p>
+            </div>
+            <div className="cave-image"></div>
+            <div className="content-container">
+                <h3 className="home-header">Get a Quote Today</h3>
+                <p>
+                    Get a quote that is just as tailored to your event as our photos will be.
+                </p>
+                <div className="quote-button-container">
+                    <Link to="/pricing">
+                        <Button color="primary" variant="contained">Reqest Pricing</Button>
+                    </Link>
                 </div>
             </div>
         </div>
-
     );
 }
 

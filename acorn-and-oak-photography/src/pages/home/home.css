@@ -60,8 +60,7 @@
     padding-right: 2vw;
     margin: 3vh;
     background-color: white;
-
-    opacity: 85%;
+    opacity: .85;
 }
 
 .quote-button-container {

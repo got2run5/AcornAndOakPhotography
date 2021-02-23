@@ -26,7 +26,11 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
-
+        
+    - name: git-bash
+      working-directory: acorn-and-oak-photography
+      run: dir
+      
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:

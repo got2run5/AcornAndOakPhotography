@@ -7,6 +7,7 @@
 }
 
 .pricing-form>section {
+    padding-top: 8px; /* fallback for non supported browsers */
     padding-top: clamp(8px, 2vh, 30px);
 }
 
@@ -23,11 +24,14 @@
 }
 
 .pricing-component-container {
+    padding-right: 8px; /* fallback for non supported browsers */
     margin-right: clamp(8px, 1vw, 24px);
+    padding-bottom: 8px; /* fallback for non supported browsers */
     padding-bottom: clamp(8px, 2vh, 30px);
 }
 
 .pricing-submit-button-container {
+    padding-top: 8px; /* fallback for non supported browsers */
     padding-top: clamp(8px, 2vh, 30px);
     padding-bottom: 1vh;
 }

@@ -65,7 +65,7 @@
         display: inline;
     }
     .left-nav {
-        flex: 0;
+        flex: 0 0 auto;
     }
     .nav-close {
         display: none !important;

@@ -56,15 +56,14 @@ function AboutMe() {
       </ul>
       <p>
         Previous projects I have worked on have ranged from designing integrations with different vendors
-        and partners (Google Plex and Hearsay Social among others), to greenfield developments and completed
-        redesigns to port a project out of Silverlight or Flash.  Along the way, I've learned new things
-        from everyone I've worked with, delivered a multitude of projects successfully, and even used my
-        experience as a private tutor to onboard an entire team onto a technology they had previously never
+        and partners (Google Plex and Hearsay Social among others), to greenfield developments and complete
+        redesigns.  Along the way, I've learned new things from everyone I've worked with, delivered a multitude of projects successfully, 
+        and even used my experience as a private tutor to onboard an entire team onto a technology they had previously never
         used.
       </p>
       <p>
         Outside of work, I enjoy spending a lot of time outdoors.  During vacations, this takes the form
-        of 20 mile day hikes or spending time on the lake fishing.  Other times, it means fixing up the 1927
+        of 20 mile day-hikes or spending time on the lake fishing.  Other times, it means fixing up the 1927
         home my fiance and I bought a year ago.
       </p>
       <p>

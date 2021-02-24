@@ -9,13 +9,13 @@ function Home() {
             <div className="beach-image">
                 <div className="content-overlay">
                     <div>
-                        Weddings
+                        Weddings,
                     </div>
                     <div>
-                        Birthdays
+                        Birthdays,
                     </div>
                     <div>
-                        Graduations
+                        Graduations,
                     </div>
                     <div>
                         & More

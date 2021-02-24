@@ -51,6 +51,8 @@
 
 .content-overlay {
     margin: auto;
+    background-color: white;
+    opacity: .85;
 }
 
 .content-overlay > div {
@@ -59,8 +61,6 @@
     padding-left: 2vw;
     padding-right: 2vw;
     margin: 3vh;
-    background-color: white;
-    opacity: .85;
 }
 
 .quote-button-container {
